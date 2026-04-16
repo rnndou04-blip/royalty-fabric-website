@@ -15,7 +15,7 @@ header {
 
 /* Navigation */
 nav {
-    background-color: gold;
+    background-color: black;
     padding: 10px;
     text-align: center;
 }
@@ -23,7 +23,7 @@ nav {
 nav a {
     margin: 10px;
     text-decoration: none;
-    color: black;
+    color: gold;
     font-weight: bold;
 }
 
@@ -38,4 +38,165 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    margin-top: auto;
+
+}
+.gallery img {
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.hero {
+    background-image: url("../images/fabric6.jpg"); /* your suit image */
+    background-size: cover;      /* makes it fill like product images */
+    background-position: top; /* keeps it centered */
+    background-repeat: no-repeat;
+    
+    height: 500px;               /* controls how tall the black section is */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     /* centers text vertically */
+    align-items: center;         /* centers text horizontally */
+    
+    text-align: center;
+    color: white;
+}
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.products {
+    text-align: center;
+    padding: 40px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+.product-card img {
+    width: 250px;
+    height: 300px;        /* forces same height */
+    object-fit: cover;    /* crops nicely like the 3rd image */
+    border-radius: 10px;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.hero-products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.hero-products .product-card img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero-products p {
+    color: white;
+    margin-top: 10px;
+}
+header {
+    display: flex;
+    align-items: center;     /* aligns logo & text vertically */
+    justify-content: center; /* keeps them centered */
+    gap: 15px;               /* space between logo & text */
+}
+
+header img {
+    width: 60px;             /* adjust logo size */
+}
+
+header h1 {
+    margin: 0;               /* removes extra space */
+}
+.hero-products p {
+    color: gold;
+    font-weight: bold;
+}
+/* HEADER LAYOUT */
+.top-header {
+    display: flex;
+    justify-content: space-between; /* pushes logo left, nav right */
+    align-items: center;
+    padding: 15px 40px;
+    background-color: black;
+    border-bottom: 2px solid gold; /* gold line */
+}
+
+/* LOGO + TEXT */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-section img {
+    width: 40px;
+}
+
+/* GOLD TEXT STYLE */
+.logo-section h1 {
+    color: #D4AF37; /* luxury gold */
+    font-size: 22px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+nav a {
+    color: #D4AF37;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+/* HOVER EFFECT (optional but nice) */
+nav a:hover {
+    color: white;
+}
+body {
+    margin: 0;
+}
+main {
+    margin: 0;
+    padding: 0;
 }
